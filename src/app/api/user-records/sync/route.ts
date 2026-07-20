@@ -30,7 +30,7 @@ async function fetchAllIn(
   const clean = [...new Set(ids)].filter(Boolean);
   if (clean.length === 0) return [];
 
-  const BATCH_SIZE = 50;
+  const BATCH_SIZE = 20;
   const allRows: any[] = [];
   const batches: string[][] = [];
 
